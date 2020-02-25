@@ -10,9 +10,30 @@
 
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             padding: 5px;
 
+            .collapse-button {
+
+                display: flex;
+                align-items: center;
+
+                padding: 10px;
+
+                i {
+
+                    color: #666;
+                    cursor: pointer;
+                    font-size: 25px;
+
+                    &:hover {
+
+                        color: #333;
+
+                    }
+
+                }
+
+            }
 
             board-button {
 
@@ -22,8 +43,11 @@
 
             .button-elements {
 
+                flex: 1;
+
                 display: flex;
                 flex-wrap: wrap;
+                align-content: flex-start;
 
             }
 
@@ -33,6 +57,24 @@
                 padding: 20px 10px 10px;
 
             }
+
+        }
+
+    }
+
+    .collapsed {
+
+        width: 54px !important;
+
+        .button-elements, .button-static {
+
+            width: 54px !important;
+
+        }
+
+        .button-static {
+
+            padding: 6px !important;
 
         }
 
