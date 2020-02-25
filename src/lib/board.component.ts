@@ -11,10 +11,27 @@ import { Board }            from './board';
              [style.background-color]="board.backgroundColor"
              [style.width]="board.width">
 
-            <board-button *ngFor="let button of board.buttons"
-                          [item]="button"></board-button>
+            <div class="inside">
+
+                <div class="button-elements">
+
+                    <board-button *ngFor="let button of board.buttons"
+                                  [item]="button"></board-button>
+
+                </div>
+
+                <div class="button-static"
+                     [style.border-top-color]="board.borderTopColor">
+
+                    <studio-button *ngFor="let button of board.bottomButtons"
+                                   [button]="button"></studio-button>
+
+                </div>
+
+            </div>
 
         </div>
+
     `,
 
     styleUrls: [ 'board.component.scss' ]

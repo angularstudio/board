@@ -1,7 +1,8 @@
-import { BoardButtonModule } from '@angular.studio/board-button';
-import { CommonModule }      from '@angular/common';
-import { NgModule }          from '@angular/core';
-import { BoardComponent }    from './board.component';
+import { BoardButtonModule }  from '@angular.studio/board-button';
+import { StudioButtonModule } from '@angular.studio/button';
+import { CommonModule }       from '@angular/common';
+import { NgModule }           from '@angular/core';
+import { BoardComponent }     from './board.component';
 
 @NgModule({
 
@@ -11,6 +12,7 @@ import { BoardComponent }    from './board.component';
 
         BoardButtonModule,
         CommonModule,
+        StudioButtonModule,
 
     ],
 

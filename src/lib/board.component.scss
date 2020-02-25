@@ -2,15 +2,37 @@
 
     .wrapper {
 
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
+        height: 100%;
 
-        board-button {
+        .inside {
 
-            margin: 3px;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5px;
+
+
+            board-button {
+
+                margin: 3px;
+
+            }
+
+            .button-elements {
+
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .button-static {
+
+                border-top: 1px solid #555;
+                padding: 20px 10px 10px;
+
+            }
 
         }
 
