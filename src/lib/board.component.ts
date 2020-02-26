@@ -6,7 +6,7 @@ import { Board }                                  from './board';
     selector: 'board',
     template: `
 
-        <div class="wrapper"
+        <div class="wrapper mat-elevation-z6"
              [class.collapsed]="collapsed"
              [style.background-color]="board.backgroundColor"
              [style.width]="board.width">
@@ -21,11 +21,9 @@ import { Board }                                  from './board';
 
                 <div class="button-elements">
 
-
                     <board-button *ngFor="let button of board.buttons"
                                   [collapsed]="collapsed"
                                   [item]="button"></board-button>
-
 
                 </div>
 
